@@ -1,0 +1,72 @@
+# Gradle
+.gradle/
+**/.gradle/
+build/
+**/build/
+
+# Android Studio
+.idea/
+*.iml
+local.properties
+.navigation/
+captures/
+.externalNativeBuild/
+.cxx/
+**/.cxx/
+**/.externalNativeBuild/
+
+# APKs e pacotes gerados
+*.apk
+*.aab
+*.apks
+*.zip
+*.tar
+*.tar.gz
+*.7z
+
+# Bibliotecas e objetos compilados
+*.o
+*.obj
+*.so
+*.dll
+*.dylib
+*.a
+*.lib
+*.class
+*.dex
+
+# Logs
+*.log
+logs/
+
+# Arquivos temporários
+*.tmp
+*.temp
+*.swp
+*~
+.DS_Store
+Thumbs.db
+
+# Credenciais e arquivos privados
+.env
+.env.*
+!.env.example
+*.jks
+*.keystore
+*.p12
+*.pem
+*.key
+google-services.json
+secrets.properties
+
+# Dados originais/proprietários dos jogos
+valve/
+cstrike/
+czero/
+gearbox/
+dod/
+tfc/
+
+# Dependências locais
+node_modules/
+__pycache__/

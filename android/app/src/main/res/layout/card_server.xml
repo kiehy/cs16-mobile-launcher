@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	style="@style/Widget.Material3.CardView.Filled"
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="8dp"
+	app:cardCornerRadius="16dp">
+
+	<androidx.constraintlayout.widget.ConstraintLayout
+	android:layout_width="match_parent"
+	android:layout_height="wrap_content"
+	android:padding="16dp">
+
+	<com.google.android.material.textview.MaterialTextView
+	android:id="@+id/serverName"
+	style="@style/TextAppearance.Material3.TitleMedium"
+	android:layout_width="0dp"
+	android:layout_height="wrap_content"
+	android:textStyle="bold"
+	app:layout_constraintEnd_toStartOf="@id/connectButton"
+	app:layout_constraintStart_toStartOf="parent"
+	app:layout_constraintTop_toTopOf="parent"
+	tools:text="Servidor Competitivo" />
+
+	<com.google.android.material.textview.MaterialTextView
+	android:id="@+id/serverStatus"
+	style="@style/TextAppearance.Material3.LabelLarge"
+	android:layout_width="0dp"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="6dp"
+	app:layout_constraintEnd_toStartOf="@id/connectButton"
+	app:layout_constraintStart_toStartOf="parent"
+	app:layout_constraintTop_toBottomOf="@id/serverName"
+	tools:text="🟢 Online" />
+
+	<com.google.android.material.textview.MaterialTextView
+	android:id="@+id/serverDetails"
+	style="@style/TextAppearance.Material3.BodyMedium"
+	android:layout_width="0dp"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="6dp"
+	app:layout_constraintEnd_toStartOf="@id/connectButton"
+	app:layout_constraintStart_toStartOf="parent"
+	app:layout_constraintTop_toBottomOf="@id/serverStatus"
+	tools:text="de_dust2 • 24/32 jogadores • 18 ms" />
+
+	<com.google.android.material.textview.MaterialTextView
+	android:id="@+id/serverDescription"
+	style="@style/TextAppearance.Material3.BodySmall"
+	android:layout_width="0dp"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="6dp"
+	android:alpha="0.8"
+	app:layout_constraintEnd_toStartOf="@id/connectButton"
+	app:layout_constraintStart_toStartOf="parent"
+	app:layout_constraintTop_toBottomOf="@id/serverDetails"
+	tools:text="Servidor oficial da comunidade" />
+
+	<com.google.android.material.textview.MaterialTextView
+	android:id="@+id/serverAddress"
+	style="@style/TextAppearance.Material3.BodySmall"
+	android:layout_width="0dp"
+	android:layout_height="wrap_content"
+	android:layout_marginTop="4dp"
+	android:alpha="0.6"
+	app:layout_constraintBottom_toBottomOf="parent"
+	app:layout_constraintEnd_toStartOf="@id/connectButton"
+	app:layout_constraintStart_toStartOf="parent"
+	app:layout_constraintTop_toBottomOf="@id/serverDescription"
+	tools:text="play.exemplo.com:27015" />
+
+	<com.google.android.material.button.MaterialButton
+	android:id="@+id/connectButton"
+	style="@style/Widget.Material3.Button.IconButton.Filled"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:contentDescription="@string/server_connect"
+	app:icon="@drawable/ic_baseline_play_arrow_24"
+	app:layout_constraintBottom_toBottomOf="parent"
+	app:layout_constraintEnd_toEndOf="parent"
+	app:layout_constraintTop_toTopOf="parent" />
+
+	</androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

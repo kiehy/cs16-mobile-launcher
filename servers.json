@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "servers": [
+    {
+      "id": "official-1",
+      "name": "CS16 Client — Servidor Oficial",
+      "address": "127.0.0.1",
+      "port": 27015,
+      "game": "cstrike",
+      "enabled": true
+    }
+  ]
+}

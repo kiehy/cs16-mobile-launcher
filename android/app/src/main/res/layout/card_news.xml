@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+												   xmlns:app="http://schemas.android.com/apk/res-auto"
+												   xmlns:tools="http://schemas.android.com/tools"
+												   style="@style/Widget.Material3.CardView.Filled"
+												   android:layout_width="match_parent"
+												   android:layout_height="wrap_content"
+												   android:layout_marginStart="4dp"
+												   android:layout_marginTop="8dp"
+												   android:layout_marginEnd="4dp"
+												   app:cardCornerRadius="16dp">
+
+												   <androidx.constraintlayout.widget.ConstraintLayout
+												   android:layout_width="match_parent"
+												   android:layout_height="wrap_content"
+												   android:padding="16dp">
+
+												   <com.google.android.material.textview.MaterialTextView
+												   android:id="@+id/newsAuthor"
+												   style="@style/TextAppearance.Material3.LabelLarge"
+												   android:layout_width="0dp"
+												   android:layout_height="wrap_content"
+												   android:maxLines="1"
+												   android:ellipsize="end"
+												   app:layout_constraintEnd_toEndOf="parent"
+												   app:layout_constraintStart_toStartOf="parent"
+												   app:layout_constraintTop_toTopOf="parent"
+												   tools:text="Admin" />
+
+												   <com.google.android.material.textview.MaterialTextView
+												   android:id="@+id/newsTimestamp"
+												   style="@style/TextAppearance.Material3.BodySmall"
+												   android:layout_width="0dp"
+												   android:layout_height="wrap_content"
+												   android:alpha="0.7"
+												   app:layout_constraintEnd_toEndOf="parent"
+												   app:layout_constraintStart_toStartOf="parent"
+												   app:layout_constraintTop_toBottomOf="@id/newsAuthor"
+												   tools:text="17/07/2026 14:32" />
+
+												   <com.google.android.material.textview.MaterialTextView
+												   android:id="@+id/newsContent"
+												   style="@style/TextAppearance.Material3.BodyMedium"
+												   android:layout_width="0dp"
+												   android:layout_height="wrap_content"
+												   android:layout_marginTop="8dp"
+												   android:textIsSelectable="true"
+												   app:layout_constraintEnd_toEndOf="parent"
+												   app:layout_constraintStart_toStartOf="parent"
+												   app:layout_constraintTop_toBottomOf="@id/newsTimestamp"
+												   tools:text="Servidor novo no ar! Vem jogar com a gente." />
+
+												   <com.google.android.material.imageview.ShapeableImageView
+												   android:id="@+id/newsImage"
+												   android:layout_width="0dp"
+												   android:layout_height="0dp"
+												   android:layout_marginTop="12dp"
+												   android:adjustViewBounds="true"
+												   android:contentDescription="@string/news_image_content_description"
+												   android:scaleType="centerCrop"
+												   android:visibility="gone"
+												   app:layout_constraintDimensionRatio="16:9"
+												   app:layout_constraintEnd_toEndOf="parent"
+												   app:layout_constraintStart_toStartOf="parent"
+												   app:layout_constraintTop_toBottomOf="@id/newsContent"
+
+												   tools:src="@drawable/news_image_placeholder"
+												   tools:visibility="visible" />
+
+												   <com.google.android.material.button.MaterialButton
+												   android:id="@+id/newsOpenDiscord"
+												   style="@style/Widget.Material3.Button.TextButton"
+												   android:layout_width="wrap_content"
+												   android:layout_height="wrap_content"
+												   android:layout_marginTop="4dp"
+												   android:text="@string/news_open_in_discord"
+												   app:icon="@android:drawable/ic_menu_view"
+												   app:iconGravity="textStart"
+												   app:layout_constraintBottom_toBottomOf="parent"
+												   app:layout_constraintStart_toStartOf="parent"
+												   app:layout_constraintTop_toBottomOf="@id/newsImage" />
+
+												   </androidx.constraintlayout.widget.ConstraintLayout>
+
+											   </com.google.android.material.card.MaterialCardView>

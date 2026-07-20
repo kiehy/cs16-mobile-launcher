@@ -1,0 +1,16 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+	  xmlns:app="http://schemas.android.com/apk/res-auto">
+
+	<item
+	android:id="@+id/action_install_game"
+	android:icon="@android:drawable/stat_sys_download"
+	android:title="@string/install_game"
+	app:showAsAction="always|withText" />
+
+	<item
+	android:id="@+id/action_settings"
+	android:icon="@drawable/ic_baseline_settings_24"
+	android:title="@string/app_settings"
+	app:showAsAction="always|withText" />
+
+	</menu>

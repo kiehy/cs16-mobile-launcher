@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string-array name="resolution_entries">
+		<item>Automática (tela cheia)</item>
+		<item>1920 x 1080</item>
+		<item>1600 x 900</item>
+		<item>1280 x 720</item>
+		<item>1024 x 576</item>
+		<item>854 x 480</item>
+		<item>640 x 360</item>
+	</string-array>
+
+	<string-array name="resolution_values">
+		<item>auto</item>
+		<item>1920x1080</item>
+		<item>1600x900</item>
+		<item>1280x720</item>
+		<item>1024x576</item>
+		<item>854x480</item>
+		<item>640x360</item>
+	</string-array>
+</resources>

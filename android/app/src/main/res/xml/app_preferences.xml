@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto">
+	<Preference
+		app:key="game_path"
+		app:layout="@layout/edit_text_preference"
+		app:title="@string/game_data_location"
+		android:summary="/storage/emulated/0/xash" />
+
+	<SwitchPreferenceCompat
+		app:key="use_icons"
+		app:layout="@layout/switch_preference"
+		app:title="@string/preferences_use_icons" />
+
+	<EditTextPreference
+		app:key="news_url"
+		app:layout="@layout/edit_text_preference"
+		app:title="@string/news_url_title"
+		app:summary="@string/news_url_summary"
+		app:useSimpleSummaryProvider="false" />
+
+	<EditTextPreference
+		app:key="discord_url"
+		app:layout="@layout/edit_text_preference"
+		app:title="@string/discord_url_title"
+		app:summary="@string/discord_url_summary"
+		app:useSimpleSummaryProvider="false"
+		app:defaultValue="https://discord.gg/suacomunidade" />
+
+	<Preference
+		app:key="discord_join"
+		app:title="@string/discord_join" />
+
+	<Preference
+		app:key="crash_logs"
+		app:title="@string/crash_logs" />
+</PreferenceScreen>
